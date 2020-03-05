@@ -1,0 +1,20 @@
+<h1>Angular JS component</h1>
+
+<button type="button" class="collapsible" ng-click="fc.toggle()">Open Flag area</button>
+<div class="content" ng-style="fc.style">
+    <button ng-click="fc.changeType()">change type</button>
+    <ul>
+        <li ng-repeat="hero in fc.list">
+            <div class="item">
+                <span ng-if="type">{{hero.name}}</span>
+                <span>{{hero.code}}</span>
+                <img src="{{hero.src}}" alt="">
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+
+
+
